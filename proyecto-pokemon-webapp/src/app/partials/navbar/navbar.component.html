@@ -1,0 +1,14 @@
+<header class="app-navbar">
+    <nav class="navbar">
+        <div class="navbar-brand-container">
+            <button class="hamburger"
+                aria-label="Menú principal"
+                [attr.aria-expanded]="isSideNavOpen"
+                (click)="toggleSidenav()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <a class="navbar-brand" (click)="showPage('home')"></a>
+        </div>
+    </nav>
+</header>
