@@ -1,0 +1,18 @@
+<section class="app-page-header">
+    <div class="page-header">
+        <div class="flex-between" *ngIf="title && subtitle; else simpleHeader">
+            <div>
+                <h1 class="page-title">{{ title }}</h1>
+                <p class="page-subtitle">{{ subtitle }}</p>
+                <ng-content select="[header-actions]"></ng-content>
+                <!-- NG CONTENT sirve para inyectar contenido de forma dinámica, parecido a un div -->
+            </div>
+        </div>
+        <ng-template #simpleHeader>
+            <h1 class="page-title">{{ title }}</h1>
+            <p class="page-subtitle">{{ subtitle }}</p>
+        </ng-template>
+        <!-- NG Template sirve para definir un bloque de código que se puede reutilizar en diferentes partes del componente.
+        El #simpleHeader viene de la línea 6. Viene de un alias, es decir, un nombre que se le da a un bloque de código para referenciarlo después. -->
+    </div>
+</section>

@@ -12,8 +12,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import { NavbarComponent } from './partials/navbar/navbar.component';
-import { SidebarComponent } from './partials/sidebar/sidebar.component';
 import { SidenavComponent } from './partials/sidenav/sidenav.component';
+import { PageHeaderComponent } from './partials/page-header/page-header.component';
+import { FooterComponent } from './partials/footer/footer.component';
+import { LoadingSpinnerComponent } from './partials/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import { SidenavComponent } from './partials/sidenav/sidenav.component';
     HomeScreenComponent,
     LoginScreenComponent,
     NavbarComponent,
-    SidebarComponent,
-    SidenavComponent
+    SidenavComponent,
+    PageHeaderComponent,
+    FooterComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+:host {
+    display: block;
+}
+
+// Contenedor principal
+.page-header { // == Esto es un selector de clase (también hay de id y de etiqueta) ==
+    background: var(--card-bg); // == El SCSS proviene del lenguaje SASS ==
+    padding: 20px; // == El 'padding' es una propiedad, el '20px' es un valor ==
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+// == La diferencia entre padding y margin es que el padding crea espacio dentro del elemento, mientras que el margin crea espacio fuera ==
+
+// Título de la página
+.page-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.8rem;
+    font-weight: 700; // Significa que la fuente es negrita
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+}
+
+// Subtítulo o descripción
+.page-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+// Ajustes para pantallas ≥768px
+@media (min-width: 768px) { // == Media query para hacer el diseño responsivo ==
+    .page-header {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+}

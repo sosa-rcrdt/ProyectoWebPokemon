@@ -10,6 +10,7 @@ export class AuthService {
 
   constructor() { }
 
+  // Ejemplo de login demo
   loginDemoSdmin() : void {
     this.currentUser$.next({
       id : 1,
