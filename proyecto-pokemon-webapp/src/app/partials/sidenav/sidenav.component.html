@@ -8,44 +8,45 @@
 
     <ul class="sidenav-menu">
         <li>
-            <a [class.active]="currentPage === 'home'" (click)="showPage('home')">
-                <i class="fas fa-home"></i>
-                Inicio
-            </a>
-        </li>
-        <li>
-            <a [class.active]="currentPage === 'pokemons'" (click)="showPage('pokemons')">
-                <i class="fas fa-users"></i>
-                Pokemons
-            </a>
+        <a [class.active]="currentPage === 'home'" (click)="showPage('home')">
+            <i class="fas fa-home"></i>
+            Inicio
+        </a>
         </li>
 
         <li>
-            <a [class.active]="currentPage === 'items'" (click)="showPage('items')">
-                <i class="fas fa-box"></i>
-                Items
-            </a>
+        <a [class.active]="currentPage === 'characters'" (click)="showPage('personajes')">
+            <i class="fas fa-users"></i>
+            Personajes
+        </a>
         </li>
 
         <li>
-            <a [class.active]="currentPage === 'moves'" (click)="showPage('moves')">
-                <i class="fas fa-bolt"></i>
-                Moves
-            </a>
+        <a [class.active]="currentPage === 'transformations'" (click)="showPage('transformaciones')">
+            <i class="fas fa-bolt"></i>
+            Transformaciones
+        </a>
         </li>
 
         <li>
-            <a [class.active]="currentPage === 'types'" (click)="showPage('types')">
-                <i class="fas fa-tags"></i>
-                Types
-            </a>
+        <a [class.active]="currentPage === 'sagas'" (click)="showPage('sagas')">
+            <i class="fas fa-book"></i>
+            Sagas
+        </a>
         </li>
 
         <li>
-            <a [class.active]="currentPage === 'abilities'" (click)="showPage('abilities')">
-                <i class="fas fa-star"></i>
-                Abilities
-            </a>
+        <a [class.active]="currentPage === 'episodes'" (click)="showPage('episodes')">
+            <i class="fas fa-tv"></i>
+            Episodios
+        </a>
+        </li>
+
+        <li>
+        <a [class.active]="currentPage === 'statistics'" (click)="showPage('statistics')">
+            <i class="fas fa-chart-bar"></i>
+            Estadísticas
+        </a>
         </li>
     </ul>
 </aside>
